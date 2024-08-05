@@ -1,0 +1,73 @@
+@import "./main.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #F3F7F8;
+}
+
+.nav, 
+.content{
+    padding: 10px;
+}
+
+.nav{
+    min-width: 220px;
+    width: 15%;
+    min-height: 100vh;
+    color: #fdfdfd; 
+    border-right: 1px solid black;
+    background-color: #343A3F;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content{
+    width: 85%;
+    min-height: 100vh;
+    background-color: #F3F7F8;
+    color: #000000;
+    font-family: "Laila", serif;
+}
+
+.nav .nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 5px;
+    height: 10vh;
+}
+
+.nav .nav-header h1{
+    all: unset;
+    font-size: 2rem;
+    font-family: "Laila", serif;
+    padding: 0.3rem;
+}
+
+.nav .nav-header h1 span{
+    color : #00866C;
+    font-weight: 700;
+}
+
+.nav .nav-header sup{
+    text-align: center;
+}
+
+.nav-items{
+    background-color: #00866C;
+    min-height: 75vh;
+    font-family: "Laila", serif;
+}
+
+.nav-footer{
+    background-color: red;
+    color: #FFF;
+    height: 10vh;
+    font-family: "Laila", serif;
+}
