@@ -1,3 +1,4 @@
+/* main styles */
 @import "./main.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap');
@@ -8,6 +9,17 @@ body{
     background-color: #F3F7F8;
 }
 
+a {
+    text-decoration: none;
+}
+
+i {
+    margin-right: 10px;
+    color: #00866C;
+}
+
+
+/* nav styles */
 .nav, 
 .content{
     padding: 10px;
@@ -41,6 +53,7 @@ body{
     border-bottom: 1px solid #000000;
     margin-bottom: 5px;
     height: 10vh;
+    user-select: none;
 }
 
 .nav .nav-header h1{
@@ -60,14 +73,74 @@ body{
 }
 
 .nav-items{
-    background-color: #00866C;
-    min-height: 75vh;
+    /* background-color: #00866C; */
+    min-height: 73vh;
     font-family: "Laila", serif;
 }
 
+.nav-items .nav-item{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #242e2d;
+    font-size: 0.95rem;
+}
+
+
+.nav-items .nav-item:hover{
+    background-color: #00866C;
+}
+.nav-item:hover i {
+    color: white;
+}
+
 .nav-footer{
-    background-color: red;
     color: #FFF;
-    height: 10vh;
+    height: 12vh;
     font-family: "Laila", serif;
+}
+
+.nav-footer .bugs,
+.nav-footer .signout{
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #242e2d;
+}
+
+.nav-footer .bugs i,
+.nav-footer .signout i {
+    margin-right: 11px;
+    color: #00866C;
+}
+
+.nav-footer .bugs{
+    border-top: 1px solid #000;
+}
+
+.nav-footer .signout{
+    margin-top: 5px;
+}
+
+.nav-footer .bugs:hover,
+.nav-footer .signout:hover{
+    background-color: #00866C;
+}
+
+.nav-footer .bugs:hover i,
+.nav-footer .signout:hover i {
+    color: #FFF;
+}
+
+/* start of content section */
+
+/* 1 - employee section */
+
+.content section {
+    display: none;
+}
+
+.content .employees {
+    display: block;
 }

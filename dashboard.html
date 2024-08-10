@@ -7,18 +7,67 @@
     <title>Admin Dashboard</title>
   </head>
   <body>
+    <!-- start nav section -->
     <nav class="nav">
       <div class="nav-header">
         <h1><span>M</span>ega<span>D</span>ev</h1>
         <sup>hr system</sup>
       </div>
       <div class="nav-items">
-        items
+        <div class="nav-item" onclick="showSection('employees')">
+          <i class="fa-solid fa-user"></i> Employees
+        </div>
+        <div class="nav-item" onclick="showSection('attendance')">
+          <i class="fa-solid fa-clipboard-user"></i> Attendance Tracking
+        </div>
+        <div class="nav-item" onclick="showSection('payroll')">
+          <i class="fa-solid fa-dollar-sign"></i> Payroll
+        </div>
+        <div class="nav-item" onclick="showSection('time-tracking')">
+          <i class="fa-regular fa-clock"></i> Time Tracker
+        </div>
       </div>
       <div class="nav-footer">
-        signout
+        <div class="bugs" onclick="showSection('bugs')">
+          <i class="fa-solid fa-bug"></i>
+          report a bug
+        </div>
+        <div class="signout">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          signout
+        </div>
       </div>
     </nav>
-    <div class="content">content</div>
+    <!-- end of nav section -->
+
+    <!-- start of the content -->
+    <div class="content">
+      <!-- employee section -->
+      <section class="employees">employees</section>
+      <!-- end of employee section -->
+
+      <!-- attendance section -->
+      <section class="attendance">attendance</section>
+      <!-- end of attendance section -->
+
+      <!-- payroll section -->
+      <section class="payroll">payroll</section>
+      <!-- end of payroll section -->
+
+      <!-- time tracking section -->
+      <section class="time-tracking">Time tracking</section>
+      <!-- end of time tracking section -->
+
+       <!-- bugs section -->
+      <section class="bugs">report a bug</section>
+      <!-- end of bugs section -->
+    </div>
+
+    <!-- end of content -->
+    <script
+      src="https://kit.fontawesome.com/f968ac7715.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/dashboard.js"></script>
   </body>
 </html>
