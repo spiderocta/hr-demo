@@ -20,6 +20,9 @@
         <div class="nav-item" onclick="showSection('attendance')">
           <i class="fa-solid fa-clipboard-user"></i> Attendance Tracking
         </div>
+        <div class="nav-item" onclick="showSection('vacations')">
+          <i class="fa-solid fa-house"></i> Vacations Requests
+        </div>
         <div class="nav-item" onclick="showSection('payroll')">
           <i class="fa-solid fa-dollar-sign"></i> Payroll
         </div>
@@ -43,12 +46,108 @@
     <!-- start of the content -->
     <div class="content">
       <!-- employee section -->
-      <section class="employees">employees</section>
+      <section class="employees">
+        <div class="emp-header">
+          <h2>Employees Information</h2>
+        </div>
+        <div class="emp-data">
+          <div class="emp-data-head">
+            <div class="emp-add">
+              <i class="fa-solid fa-user-plus"></i> new employee
+            </div>
+            <input type="search" id="search" placeholder="Filter by Name" />
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>first name</th>
+                <th>last name</th>
+                <th>email</th>
+                <th>position</th>
+                <th>join date</th>
+                <th>actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="title">Muhammad</td>
+                <td>Ahmed</td>
+                <td>tomato@salsa.com</td>
+                <td>backend develoer</td>
+                <td>20/12/2023</td>
+                <td class="actions">
+                  <i class="fa-solid fa-pen"></i>
+                  <i class="fa-regular fa-trash-can"></i>
+                </td>
+              </tr>
+              <tr>
+                <td id="title">Muhammad</td>
+                <td>Ahmed</td>
+                <td>tomato@salsa.com</td>
+                <td>backend develoer</td>
+                <td>20/12/2023</td>
+                <td class="actions">
+                  <i class="fa-solid fa-pen"></i>
+                  <i class="fa-regular fa-trash-can"></i>
+                </td>
+              </tr>
+              <tr>
+                <td id="title">Muhammad</td>
+                <td>Ahmed</td>
+                <td>tomato@salsa.com</td>
+                <td>backend develoer</td>
+                <td>20/12/2023</td>
+                <td class="actions">
+                  <i class="fa-solid fa-pen"></i>
+                  <i class="fa-regular fa-trash-can"></i>
+                </td>
+              </tr>
+              <tr>
+                <td id="title">Muhammad</td>
+                <td>Ahmed</td>
+                <td>tomato@salsa.com</td>
+                <td>backend develoer</td>
+                <td>20/12/2023</td>
+                <td class="actions">
+                  <i class="fa-solid fa-pen"></i>
+                  <i class="fa-regular fa-trash-can"></i>
+                </td>
+              </tr>
+              <tr>
+                <td id="title">mister</td>
+                <td>Ahmed</td>
+                <td>tomato@salsa.com</td>
+                <td>backend develoer</td>
+                <td>20/12/2023</td>
+                <td class="actions">
+                  <i class="fa-solid fa-pen"></i>
+                  <i class="fa-regular fa-trash-can"></i>
+                </td>
+              </tr>
+              <tr>
+                <td id="title">donos</td>
+                <td>Ahmed</td>
+                <td>tomato@salsa.com</td>
+                <td>backend develoer</td>
+                <td>20/12/2023</td>
+                <td class="actions">
+                  <i class="fa-solid fa-pen"></i>
+                  <i class="fa-regular fa-trash-can"></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
       <!-- end of employee section -->
 
       <!-- attendance section -->
       <section class="attendance">attendance</section>
       <!-- end of attendance section -->
+
+      <!-- vacations section -->
+      <section class="vacations">vacations</section>
+      <!-- end of vacations section -->
 
       <!-- payroll section -->
       <section class="payroll">payroll</section>
@@ -58,7 +157,7 @@
       <section class="time-tracking">Time tracking</section>
       <!-- end of time tracking section -->
 
-       <!-- bugs section -->
+      <!-- bugs section -->
       <section class="bugs">report a bug</section>
       <!-- end of bugs section -->
     </div>
@@ -66,6 +165,11 @@
     <!-- end of content -->
     <script
       src="https://kit.fontawesome.com/f968ac7715.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
     <script src="js/dashboard.js"></script>

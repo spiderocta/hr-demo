@@ -9,6 +9,12 @@ body{
     background-color: #F3F7F8;
 }
 
+h2{
+    all: unset;
+    padding: 0;
+    margin: 0;
+}
+
 a {
     text-decoration: none;
 }
@@ -16,6 +22,80 @@ a {
 i {
     margin-right: 10px;
     color: #00866C;
+}
+
+/* commons */
+/* global table styles */
+table {
+    width: 98%;
+    border-collapse: separate;
+    background: #fff;
+    border-radius: 5px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+thead {
+    border-radius: 5px;
+    user-select: none;
+}
+
+thead th {
+    font-family: 'Patua One', cursive;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    padding: 20px;
+    background-color: #343A3F;
+    /* background-image : linear-gradient(#343A3F, #43494f); */
+    border-top: 1px solid #858d99;
+
+    &:first-child {
+        border-top-left-radius: 5px;
+    }
+
+    &:last-child {
+        border-top-right-radius: 5px;
+    }
+}
+
+tbody tr td {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #5f6062;
+    font-size: 13px;
+    padding: 20px 20px 20px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+
+}
+
+tbody tr:nth-child(2n) {
+    background: #f0f3f5;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+
+    &:first-child {
+        border-bottom-left-radius: 5px;
+    }
+
+    &:last-child {
+        border-bottom-right-radius: 5px;
+    }
+}
+
+tbody:hover>tr td {
+    opacity: 0.5;
+}
+
+tbody:hover>tr:hover td {
+    text-shadow(none);
+    color: #2d2d2d;
+    opacity: 1.0;
 }
 
 
@@ -143,4 +223,78 @@ i {
 
 .content .employees {
     display: block;
+}
+
+/* employee section */
+
+.employees .emp-header{
+    background-color: #FFFFFF;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.employees .emp-header h2{
+    font-size: 1.8rem;
+    color: #7f7f7f;
+}
+
+.employees .emp-data{
+    background-color: #FFF;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.employees .emp-data .emp-data-head{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.employees .emp-data input{
+    width: 40%;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.employees .emp-data .emp-add{
+    background-color: #343A3F;
+    padding: 20px 30px;
+    color: #FFF;
+    border-radius: 3px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.employees .emp-data .emp-add:hover{
+    background-color: #323434;
+}
+.employees .emp-data .emp-add:hover i{
+    color: #FFF;
+
+.employees .emp-data .actions{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.employees .emp-data .actions i{
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.employees .emp-data .actions i:last-of-type{
+    color: red;
 }
