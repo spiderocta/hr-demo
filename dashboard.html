@@ -57,7 +57,7 @@
             </div>
             <input type="search" id="search" placeholder="Filter by Name" />
           </div>
-          <table>
+          <table id="modaltable">
             <thead>
               <tr>
                 <th>first name</th>
@@ -76,8 +76,8 @@
                 <td>backend develoer</td>
                 <td>20/12/2023</td>
                 <td class="actions">
-                  <i class="fa-solid fa-pen"></i>
-                  <i class="fa-regular fa-trash-can"></i>
+                  <i class="fa-solid fa-pen" title="edit"></i>
+                  <i class="fa-regular fa-trash-can" title="delete"></i>
                 </td>
               </tr>
               <tr>
@@ -163,6 +163,73 @@
     </div>
 
     <!-- end of content -->
+
+    <!-- start of emplyee view modal -->
+    <div class="emp-modal">
+      <div class="emp-modal-header">
+        <div class="text">
+          Employee View
+        </div>
+        <div class="close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="emp-modal-body">
+        <div class="emp-info">
+          <h4>Muhammad Ahmed</h4>
+           <table>
+            <thead>
+            </thead>
+            <tbody>
+               <tr>
+                <td>Position</td>
+                <td>backend developer</td>
+              </tr>
+              <tr>
+                <td>Initial salary</td>
+                <td>400000 EGP</td>
+              </tr>
+              <tr>
+                <td>Join date</td>
+                <td>12 - 10- 2030</td>
+              </tr>
+              <tr>
+                <td>email</td>
+                <td>hakonamatata@lol.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+               <tr>
+                <td><i class="fa-regular fa-user"></i><a href="#">
+                  View full profile
+                </a></td>
+              </tr>
+              <tr>
+                <td><i class="fa-solid fa-clipboard-user"></i><a href="#">Display attendance records</a></td>
+              </tr>
+              <tr>
+                <td><i class="fa-solid fa-house"></i><a href="#">
+                  Display vacation requests
+                </a></td>
+              </tr>
+              <tr>
+                <td><i class="fa-regular fa-clock"></i><a href="#">
+                  Display total work hours
+                </a></td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+
+    <!-- end of employee view modal -->
+
+    
     <script
       src="https://kit.fontawesome.com/f968ac7715.js"
       crossorigin="anonymous"

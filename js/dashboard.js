@@ -23,3 +23,32 @@ $('#search').keyup(function() {
     }
   });
 });
+
+// emp modal 
+document.addEventListener('DOMContentLoaded', function() {
+  var rows = document.querySelectorAll('#modaltable tbody tr');
+  rows.forEach(function(row) {
+    row.addEventListener('click', function(event) {
+      event.preventDefault();
+      var modal = document.querySelector('.emp-modal');
+      if (modal.style.display === 'none') {
+        modal.style.display = 'block';
+      } else {
+        modal.style.display = 'none';
+      }
+    });
+  });
+
+  window.onclick = function(event) {
+    var modal = document.querySelector('.emp-modal');
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  };
+
+  var span = document.getElementsByClassName("close")[0];
+  span.onclick = function() {
+    var modal = document.querySelector('.emp-modal');
+    modal.style.display = 'none';
+  };
+});
