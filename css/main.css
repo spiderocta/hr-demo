@@ -156,6 +156,12 @@ h3 {
     margin-bottom: 15px;
     user-select: none;
 }
+.btn a{
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
 
 p {
     color: #fff;

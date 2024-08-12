@@ -167,9 +167,7 @@
     <!-- start of emplyee view modal -->
     <div class="emp-modal">
       <div class="emp-modal-header">
-        <div class="text">
-          Employee View
-        </div>
+        <div class="text">Employee View</div>
         <div class="close">
           <i class="fa-solid fa-xmark"></i>
         </div>
@@ -177,11 +175,10 @@
       <div class="emp-modal-body">
         <div class="emp-info">
           <h4>Muhammad Ahmed</h4>
-           <table>
-            <thead>
-            </thead>
+          <table>
+            <thead></thead>
             <tbody>
-               <tr>
+              <tr>
                 <td>Position</td>
                 <td>backend developer</td>
               </tr>
@@ -201,35 +198,71 @@
           </table>
         </div>
         <table>
-            <thead>
-            </thead>
-            <tbody>
-               <tr>
-                <td><i class="fa-regular fa-user"></i><a href="#">
-                  View full profile
-                </a></td>
-              </tr>
-              <tr>
-                <td><i class="fa-solid fa-clipboard-user"></i><a href="#">Display attendance records</a></td>
-              </tr>
-              <tr>
-                <td><i class="fa-solid fa-house"></i><a href="#">
-                  Display vacation requests
-                </a></td>
-              </tr>
-              <tr>
-                <td><i class="fa-regular fa-clock"></i><a href="#">
-                  Display total work hours
-                </a></td>
-              </tr>
-            </tbody>
-          </table>
+          <thead></thead>
+          <tbody>
+            <tr>
+              <td>
+                <i class="fa-regular fa-user"></i
+                ><a href="#"> View full profile </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fa-solid fa-clipboard-user"></i
+                ><a href="#">Display attendance records</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fa-solid fa-house"></i
+                ><a href="#"> Display vacation requests </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fa-regular fa-clock"></i
+                ><a href="#"> Display total work hours </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
 
     <!-- end of employee view modal -->
 
-    
+    <!-- start new employee modal -->
+    <div id="new-emp-modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+        <h1>New Employee</h1>
+        <div class="form-grp">
+          <form action="#">
+            <label for="fname">
+              First Name <input type="text">
+            </label>
+            <label for="lname">
+              Last Name <input type="text">
+            </label>
+            <label for="email">
+              Email<input type="text">
+            </label>
+            <label for="date">
+              Join Date<input type="text">
+            </label>
+            <label for="position">
+              Position<input type="text">
+            </label>
+            <button type="submit">add employee</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- end new employee modal -->
+
     <script
       src="https://kit.fontawesome.com/f968ac7715.js"
       crossorigin="anonymous"

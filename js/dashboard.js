@@ -52,3 +52,16 @@ document.addEventListener('DOMContentLoaded', function() {
     modal.style.display = 'none';
   };
 });
+
+
+// new employee modal
+var modal = document.getElementById("new-emp-modal");
+var btn = document.getElementsByClassName("emp-add")[0];
+var span = document.getElementsByClassName("close")[1];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
